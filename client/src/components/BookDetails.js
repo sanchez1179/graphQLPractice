@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { getBookQuery } from '../queries/queries';
 import { graphql } from 'react-apollo';
+import MinusButton from './Buttons/MinusButton';
+
 
 class BookDetails extends Component{
     displayBookDetails(){
@@ -31,6 +33,7 @@ class BookDetails extends Component{
         return (
             <div id="book-details">
                 {this.displayBookDetails()}
+                <MinusButton/>
             </div>
         );
     }

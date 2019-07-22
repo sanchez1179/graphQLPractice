@@ -45,12 +45,18 @@ form .field{
   grid-gap: 10px;
 }
 
+form div .author{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
 form label{
   text-align: right;
   padding: 6px;
 }
 
-form input, form select{
+form input, form select, input{
   margin: 4px 0;
   padding: 6px;
   box-sizing: border-box;
@@ -76,9 +82,22 @@ form button{
   width: 40%;
   height: 100%;
   background: #AD1457;
-  padding: 30px;
+  padding: 15px;
   overflow: auto;
   box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
   box-sizing: border-box;
   color: #fff;
+}
+
+#minus-button{
+  color: #AD1457;
+  font-size: 2em;
+  background: #fff;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 50px;
 }
